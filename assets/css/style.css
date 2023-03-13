@@ -1,1 +1,163 @@
-/* This is a css file */
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .d_flex, header {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  
+  body {
+    background-color: #2d313c;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  
+  
+  .container {
+    display: block;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    max-width: 1650px;
+    width: 100%;
+    padding: 50px 110px 130px;
+    position: relative;
+    z-index: 1;
+    margin: auto;
+  }
+  
+  header {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    font-family: "Varela Round";
+  }
+  
+  header .logo {
+    width: 20%;
+    font-size: 20px;
+    color: #ffbe00;
+  }
+  
+  header ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 60%;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    list-style-type: none;
+  }
+  
+  header ul li {
+    font-size: 16px;
+    color: #ffbe00;
+    position: relative;
+  }
+  
+  header ul li + li {
+    margin-left: 50px;
+  }
+  
+  header ul li.active {
+    color: #babbbf;
+  }
+  
+  header ul li.active:after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    width: 20px;
+    height: 2px;
+    background-color: #babbbf;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  
+  header .search_nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    color: #2d313c;
+    width: 20%;
+  }
+  
+  header .search_nav .fa {
+    font-size: 20px;
+  }
+  
+  header .search_nav .fa + .fa {
+    margin-left: 30px;
+  }
+  
+  .content_container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: 80px;
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: calc(100vh - 330px);
+  }
+  
+  .content_container .content {
+    font-family: "Varela Round";
+    color: #fff;
+  }
+  
+  .content_container .content h3 {
+    font-size: 30px;
+    font-weight: 400;
+  }
+  
+  .content_container .content h2 {
+    font-size: 100px;
+    font-weight: 400;
+  }
+  
+  .content_container .content p {
+    font-size: 20px;
+    color: #ffbe00;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .content_container .content .start {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 25px;
+    border: 1px solid #fff;
+    margin-top: 15px;
+  }
+  
+  .content_container .content .works {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 25px;
+    border: 1px solid #fff;
+    margin-top: 15px;
+  }
