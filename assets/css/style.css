@@ -23,7 +23,58 @@
     overflow: hidden;
   }
   
+  .bg_img {
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100%;
+  }
   
+  .bg_img img {
+    width: 70vh;
+    display: block;
+    position: relative;
+  }
+  
+  .bg_img .social {
+    position: absolute;
+    width: 50px;
+    top: 50%;
+    right: 0;
+    background-color: #fff;
+    color: #000;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    z-index: 2;
+    padding: 25px 0px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    -webkit-box-shadow: -3px 10px 10px rgba(0, 0, 0, 0.3);
+            box-shadow: -3px 10px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .bg_img .social .fa {
+    font-size: 20px;
+  }
+  
+  .bg_img .social .fa + .fa {
+    margin-top: 25px;
+  }
   
   .container {
     display: block;
@@ -124,6 +175,29 @@
     height: calc(100vh - 330px);
   }
   
+  .content_container .dish_img {
+    position: absolute;
+    top: 50%;
+    right: 4vh;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    width: 65vh;
+  }
+  
+  @media (max-width: 1600px) {
+    .content_container .dish_img {
+      width: 63vh;
+      top: 55%;
+      right: 18vh;
+    }
+  }
+  
+  .content_container .dish_img img {
+    width: 100%;
+  }
+  
+  
+  
   .content_container .content {
     font-family: "Varela Round";
     color: #fff;
@@ -134,7 +208,7 @@
     font-weight: 400;
   }
   
-  .content_container .content h2 {
+  .content_container .content h1 {
     font-size: 100px;
     font-weight: 400;
   }
@@ -146,7 +220,7 @@
     padding: 0;
   }
   
-  .content_container .content .start {
+  .content_container .content .cta {
     display: inline-block;
     padding: 5px 10px;
     border-radius: 25px;
@@ -154,10 +228,4 @@
     margin-top: 15px;
   }
   
-  .content_container .content .works {
-    display: inline-block;
-    padding: 5px 10px;
-    border-radius: 25px;
-    border: 1px solid #fff;
-    margin-top: 15px;
-  }
+  /*# sourceMappingURL=style.css.map */
