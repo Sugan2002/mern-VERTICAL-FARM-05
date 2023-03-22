@@ -1,6 +1,6 @@
 *{
   background-color: black;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Arial', sans-serif;
   color: white;
 }
 .logo{
@@ -70,7 +70,7 @@ section{
   font-size: 350%;
   width:60%;
 }
-.comma-clr{
+.camma{
   color:#f1ffa2;
 }
 section i{
@@ -90,6 +90,8 @@ section i{
   font-size: 15px;
   width: 52%;
 }
+
+
 section img{
   width: 45px;
   height: 45px;
